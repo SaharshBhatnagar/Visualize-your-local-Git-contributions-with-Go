@@ -1,0 +1,3 @@
+*.exe
+.vscode/
+.local_git_repos
