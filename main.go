@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 )
 
 func main() {
@@ -14,14 +13,13 @@ func main() {
 	flag.Parse()
 
 	if *folder != "" {
-		// fmt.Println("Scanning Directory:", *folder)
+		
 		scan(*folder)
-
 		return
 	}
 
 	if *email != "" {
-		fmt.Println("Scanning email:", *email)
+		stats(*email)
 		return
 	}
 }
